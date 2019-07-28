@@ -210,27 +210,7 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-				<artifactId>maven-clean-plugin</artifactId>
-				<version>2.5</version>
-				<configuration>
-					<filesets>
-						<fileset>
-							<directory>${server.location}\webapps</directory>
-							<includes>
-								<include>mockExam.war</include>
-							</includes>
-							<followSymlinks>false</followSymlinks>
-						</fileset>
-						<fileset>
-							<directory>${server.location}\webapps\mockExam</directory>
-<!-- 							<includes> -->
-<!-- 								<include>mockExam</include> -->
-<!-- 							</includes> -->
-						</fileset>
-					</filesets>
-				</configuration>
-			</plugin>
+			
 		</plugins>
 	</build>
 </project>
